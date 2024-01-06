@@ -1,0 +1,146 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+}
+/* <!-- ////////////////       Navigation      //////////////// --> */
+/* .nav-bar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+} */
+nav {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #333;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    margin-right: 10%;
+  }
+
+  nav li {
+    float: left;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+
+}
+
+li a:hover {
+    color: greenyellow;
+}
+/* <!-- ////////////////       Home            //////////////// --> */
+#home {
+    background-color: burlywood;
+    height: 100%;
+}
+#home div {
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 20%;
+}
+/* <!-- ////////////////       Projects        //////////////// --> */
+#projects {
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+#left-side {
+    background-color: aqua;
+
+}
+#right-side {
+    background-color: lightcoral;
+}
+.proj {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+#sticky {
+    position: sticky;
+    top: 10%;
+    margin: auto;
+    width: 50%;
+}
+/* <!-- ////////////////       About           //////////////// --> */
+#about {
+    background-color: bisque;
+    height: 100%;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* position:fixed; */
+}
+#me {
+    /* display: inline; */
+    border: 3px solid black;
+    border-radius: 2px;
+    padding: 20px;
+    width: 70%;
+}
+/* <!-- ////////////////       Skills          //////////////// --> */
+#skills {
+    /* justify-content: center; */
+    text-align: center;
+    /* width: 80%; */
+    background-color: chocolate;
+    /* height: 100%; */
+    padding: 20px;
+}
+.main-container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row {
+    flex: 1 0 30%; /* Three items per row initially */
+    box-sizing: border-box;
+    margin: 0 10px 20px 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .row {
+        flex: 1 0 48%; /* Two items per row on smaller screens */
+    }
+}
+/* <!-- ////////////////       Contacts        //////////////// --> */
+#contact {
+    background-color: aquamarine;
+    text-align: center;
+    height: 20%;
+    padding: 10%;
+}
+#contact a:hover {
+    color: green;
+}
+/* <!-- ////////////////       Footer          //////////////// --> */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    bottom: 0;
+    text-align: right;
+}
+    footer p {
+    margin-right: 10%;
+}
