@@ -16,6 +16,7 @@ nav {
     width: 100%;
     position: fixed;
     background-color: #333;
+    height: 40px;
 }
 nav ul {
     list-style: none;
@@ -24,15 +25,18 @@ nav ul {
     overflow: hidden;
     float: right;
     margin-right: 10%;
+    
   }
 
   nav li {
     float: left;
+    position: relative;
+    
   }
   nav a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 16px 0px;
     text-decoration: none;
     color: white;
 
@@ -41,9 +45,20 @@ nav ul {
 li a:hover {
     color: greenyellow;
 }
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: greenyellow;
+    transition: width 0.3s ease;   
+}
 /* <!-- ////////////////       Home            //////////////// --> */
 #home {
-    background-color: burlywood;
+    background: linear-gradient(25deg, #0052D9, #1AAB8B);
+
+    /* background-color: burlywood; */
     height: 100%;
 }
 #home div {
@@ -76,7 +91,7 @@ li a:hover {
 }
 /* <!-- ////////////////       About           //////////////// --> */
 #about {
-    background-color: bisque;
+    background: linear-gradient(25deg, #0052D9, #1AAB8B);
     height: 100%;
     /* text-align: center; */
     justify-content: center;
@@ -127,7 +142,7 @@ li a:hover {
 #contact {
     background-color: aquamarine;
     text-align: center;
-    height: 20%;
+    height: 60%;
     padding: 10%;
 }
 #contact a:hover {
